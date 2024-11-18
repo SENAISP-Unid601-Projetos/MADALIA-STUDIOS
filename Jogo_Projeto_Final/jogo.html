@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape The Avalanche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="IMG/logoEmpresa.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styleJogo.css">
+</head>
+<body id="corpo">
+    <!-- Caso a tela for pequena... -->
+    <p id="avisoTelaPequena">Esse jogo deve ser jogado em uma tela maior</p>
+    <div id="jogo">
+        <canvas id="meuCanvas" width="1400" height="500"></canvas>
+
+        <!-- Elemento de vídeo da cutscene inicial -->
+        <video id="videoInicio">
+            <source src="VIDEO/inicio.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <!-- Elemento de vídeo da primeira fase -->
+        <video id="meuVideo">
+            <source src="VIDEO/fase1.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <!-- Elemento de vídeo da segunda fase -->
+        <video id="meuVideo2">
+            <source src="VIDEO/fase2.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <!-- Elemento de vídeo da cutscene final -->
+        <video id="videoFinal">
+            <source src="VIDEO/cutscene_Final.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <img src="IMG/logoJogo.png" id="imgLogoJogo" alt="Falha no carregamento">
+
+        <!-- Frase final -->
+        <p id="textoFinal">Obrigado por ter jogado</p>
+
+        <div id="divBotoes">
+            <a class="btn" href="index.html" target="_self">Voltar para o início</a>
+
+            <!-- Botão para mutar o vídeo -->
+            <input type="button" class="btn" id="btnMutar" value="Mutar">
+
+            <!-- Botão para reiniciar -->
+            <input type="button" id="btnNovoJogo" class="btn" value="Tentar de novo">
+
+            <!-- Botão para pular o vídeo -->
+            <button class="btn" id="skipInicio">Pular vídeo</button>
+            <button class="btn" id="skipButton">Pular vídeo</button>
+            <button class="btn" id="skipButton2">Pular vídeo</button>
+        </div>
+
+        <input type="button" id="btnAvancar" value="Avançar">
+
+        <div id="botoesFinais">
+            <a href="index.html" class="btnFinal">Voltar ao início</a>
+            <a href="../index.html" class="btnFinal">Página do jogo</a>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

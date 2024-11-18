@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", system-ui;
+}
+
+body, html{
+    background-color: #7364D2;
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+header{
+    background-color: #4E148C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+#tituloCabecalho{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-left: 2rem;
+}
+
+img{
+    width: 12rem;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#div_daniel, #div_julia, #div_luana, #div_marilia, #div_emily, #div_victoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: #4E148C;
+    padding: 1.5rem;
+    border-radius: 1cm;
+    margin-bottom: 2rem;
+    width: 28rem;
+}
+
+#equipe{
+    display: flex;
+    flex-direction: column;
+}
+
+#alto, #baixo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nome{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.funcao{
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.linkLinkedin{
+    color: white;
+    margin-top: 1rem;
+    transition: 200ms ease;
+}
+
+.linkLinkedin:hover{
+    color: #97DFFC;
+}
+
+#rodape{
+    background-color: #4E148C;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#copyRight{
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#voltarAoInicio{
+    color: white;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    transition: 200ms ease;
+    display: inline;
+}
+
+#voltarAoInicio:hover{
+    color: #97DFFC;
+}
+
+/* Media Queries para responsividade */
+
+/* Telas menores que 900px (tablets e celulares) */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #tituloInicial {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    #baixo, #alto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #equipe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #div_daniel, #div_julia, #div_luana, #div_marilia, #div_emily, #div_victoria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        background-color: #4E148C;
+        padding: 1rem;
+        border-radius: 0.5cm;
+        margin-bottom: 2rem;
+        width: 20rem;
+        height: 40rem;
+        text-align: center;
+    }
+
+    img{
+        border-radius: 0.5cm;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #rodape{
+        height: 10rem;
+    }
+
+    #voltarAoInicio{
+        font-size: 1.5rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+
+    #voltarAoInicio:hover{
+        font-size: 1.5rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+
+    #voltarAoInicio:active{
+        font-size: 1.8rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+
+    .linkLinkedin{
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: #4E148C;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+
+    .linkLinkedin:hover{
+        color: #4E148C;
+    }
+
+    .nome{
+        font-size: 1.3rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #tituloInicial {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    #baixo, #alto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #equipe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #div_daniel, #div_julia, #div_luana, #div_marilia, #div_emily, #div_victoria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        background-color: #4E148C;
+        padding: 1rem;
+        border-radius: 0.5cm;
+        margin-bottom: 2rem;
+        width: 22rem;
+    }
+
+    img{
+        border-radius: 0.5cm;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linkLinkedin{
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: #4E148C;
+        font-weight: 600;
+    }
+
+    .linkLinkedin:hover{
+        color: #4E148C;
+    }
+}
+
+/* Telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    #tituloInicial {
+        font-size: 1.8rem;
+    }
+
+    #voltarAoInicio{
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+
+    #voltarAoInicio:hover{
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+
+    #voltarAoInicio:active{
+        font-size: 1.3rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+
+    #copyRight{
+        font-size: 1rem;
+    }
+}

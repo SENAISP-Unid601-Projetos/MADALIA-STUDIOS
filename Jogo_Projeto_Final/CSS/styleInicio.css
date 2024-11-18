@@ -1,0 +1,77 @@
+*{
+    /* Resetando o CSS da página e aplicando fonte */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+
+img{
+    height: 25rem;
+    width: auto;
+}
+
+#jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body, html{
+    /* Colocando os botões para o meio da tela */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EB5F0;
+}
+
+.btn{
+    /* Editando os botões da tela de início */
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 15rem;
+    border-radius: 1cm;
+    background-color: #613DC1;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
+    transition: 0.2s; /* Transição suave para a cor */
+}
+
+.btn:hover{
+    background-color: #7364D2;
+    width: 20rem;
+}
+
+#avisoTelaPequena{
+    display: none
+}
+
+@media (max-width: 700px){
+    #avisoTelaPequena{
+        /* Caso a tela for pequena, exibe um aviso */
+        display: block;
+    }
+
+    #jogo{
+        display: none;
+    }
+}
+
+@media (max-height: 700px){
+    #avisoTelaPequena{
+        /* Caso a tela for pequena, exibe um aviso */
+        display: block;
+    }
+
+    #jogo{
+        display: none;
+    }
+}

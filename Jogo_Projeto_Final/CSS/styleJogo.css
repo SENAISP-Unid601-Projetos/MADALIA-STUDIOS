@@ -1,0 +1,204 @@
+*{
+    /* Resetando o CSS da página e aplicando fonte */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+
+body, html{
+    /* Colocando o canvas para o meio da tela */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EB5F0;
+}
+
+button{
+    border: none;
+}
+
+canvas{
+    /* Visualizando o canvas */
+    border-radius: 0.5cm;
+}
+
+.btn{
+    /* Editando o botão de voltar */
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 15rem;
+    border-radius: 1cm;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
+    background-color: #613DC1;
+    transition: 0.2s; /* Transição suave para a cor */
+    border: none;
+}
+
+#skipButton, #skipButton2{
+    /* Editando o botão de voltar */
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 15rem;
+    border-radius: 1cm;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
+    background-color: #613DC1;
+    transition: 0.2s; /* Transição suave para a cor */
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+#meuVideo, #meuVideo2, #videoInicio, #videoFinal{
+    display: none;
+    border-radius: 0.5cm;
+    object-fit: fill;
+    height: 500px;
+    width: 1000px;
+}
+
+#imgLogoJogo{
+    display: none;
+    border-radius: 0.5cm;
+    width: 600px;
+    height: auto;
+}
+
+#botoesFinais{
+    display: none;
+}
+
+#btnAvancar{
+    display: none;
+
+    /* Editando o botão de voltar */
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 15rem;
+    border-radius: 1cm;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
+    background-color: #613DC1;
+    transition: 0.2s; /* Transição suave para a cor */
+    border: none;
+    cursor: pointer;
+}
+
+#btnAvancar:hover{
+    width: 20rem;
+}
+
+.btnFinal{
+    /* Editando o botão de voltar */
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: black;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 30rem;
+    border-radius: 1cm;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
+    background-color: #613DC1;
+    transition: 0.2s; /* Transição suave para a cor */
+    border: none;
+}
+
+#jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnFinal:hover{
+    background-color: #7364D2;
+}
+
+#textoFinal{
+    display: none;
+    font-size: 3rem;
+    margin: 2rem;
+    font-weight: 800;
+    color: black;
+}
+
+#skipButton:hover{
+    width: 20rem;
+}
+
+#skipButton2:hover{
+    background-color: #7364D2;
+    width: 20rem;
+}
+
+#skipInicio{
+    display: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    width: 20rem;
+}
+
+#divBotoes{
+    display: flex;
+    flex-direction: row;
+}
+
+#btnNovoJogo{
+    border: none;
+    display: none;
+}
+
+#avisoTelaPequena{
+    display: none
+}
+
+#btnMutar{
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    #avisoTelaPequena{
+        /* Caso a tela for pequena, exibe um aviso */
+        display: block;
+    }
+
+    #jogo{
+        display: none;
+    }
+}
+
+@media (max-height: 700px){
+    #avisoTelaPequena{
+        /* Caso a tela for pequena, exibe um aviso */
+        display: block;
+    }
+
+    #jogo{
+        display: none;
+    }
+}

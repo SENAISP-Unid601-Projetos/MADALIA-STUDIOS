@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", system-ui;
+}
+
+body, html{
+    background-color: #7364D2;
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+header{
+    background-color: #4E148C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+#tituloInicial{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-left: 2rem;
+}
+
+#empresa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#imgLogo{
+    background-color: white;
+    padding: 5rem;
+    border-radius: 2cm;
+}
+
+#textoEmpresa{
+    color: white;
+    font-size: 1.2rem;
+    width: 40rem;
+    text-align: justify;
+}
+
+#rodape{
+    background-color: #4E148C;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#copyRight{
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    transition: 200ms ease;
+    display: inline;
+}
+
+.btn:hover{
+    color: #97DFFC;
+}
+
+/* Telas menores que 900px (tablets e celulares) */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #tituloInicial {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    #empresa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    #imgLogo{
+        width: 80%;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        border-radius: 1cm;
+    }
+
+    #textoEmpresa{
+        margin: 1rem;
+        font-size: 1.5rem;
+        text-align: justify;
+        width: 30rem;
+    }
+
+    #rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 15rem;
+        margin-top: 2rem;
+    }
+
+    .btn{
+        font-size: 1.1rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+        margin: 1rem;
+        width: 12rem;
+        text-align: center;
+    }
+
+    .btn:hover{
+        font-size: 1.1rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+        margin: 1rem;
+        width: 12rem;
+        text-align: center;
+    }
+
+    .btn:active{
+        font-size: 1.4rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+        margin: 1rem;
+        width: 12rem;
+        text-align: center;
+    }
+}
+
+/* Telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #tituloInicial {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    #empresa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    #imgLogo{
+        width: 90%;
+        height: auto;
+        margin-bottom: 3rem;
+        border-radius: 1cm;
+    }
+
+    #textoEmpresa{
+        margin: 1rem;
+    }
+}
+
+/* Telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    #tituloInicial {
+        font-size: 1.8rem;
+    }
+
+    #rodape{
+        height: 18rem;
+    }
+
+    #textoEmpresa{
+        width: 22rem;
+        font-size: 1.2rem;
+    }
+
+    #copyRight{
+        font-size: 1rem;
+    }
+}

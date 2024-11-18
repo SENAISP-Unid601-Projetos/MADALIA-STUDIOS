@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+
+body, html{
+    background-color: #DC97FF;
+}
+
+#avisoTelaPequena{
+    display: none
+}
+
+#informacoes{
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+    font-weight: 650;
+    color: #6818a5; 
+}
+
+#tituloHistoria{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#texto{
+    color: white;
+    margin-top: 1.5rem;
+}
+
+#historia{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    background-color: #6818a5;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 1cm;
+    transition: 0.2s; /* Transição suave para a cor */
+}
+
+#enredo{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    background-color: #6818a5;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 1cm;
+    transition: 0.2s; /* Transição suave para a cor */
+}
+
+#tituloEnredo{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#textoEnredo{
+    color: white;
+    margin-top: 1.5rem;
+}
+
+#controles{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 6rem;
+    background-color: #6818a5;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 1cm;
+    transition: 0.2s; /* Transição suave para a cor */
+}
+
+#tituloControles{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#textoControles{
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+#historia:hover, #enredo:hover, #controles:hover{
+    background-color: #8b2fc9;
+}
+
+.btn{
+    /* Editando o botão de voltar */
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    margin-top: 1rem;
+    width: 15rem;
+    margin-left: 4rem;
+    padding: 1.5rem;
+    border-radius: 1cm;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
+    background-color: #6818a5;
+    transition: 0.2s; /* Transição suave para a cor */
+}
+
+.btn:hover{
+    background-color: #8b2fc9;
+    width: 20rem;
+}
+
+#posicionarImg{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+#divImgLogo{
+    margin-right: 9rem;
+}
+
+@media (max-width: 700px){
+    html, body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #avisoTelaPequena{
+        /* Caso a tela for pequena, exibe um aviso */
+        display: block;
+    }
+
+    #paginaSobre{
+        display: none;
+    }
+}
+
+@media (max-height: 700px){
+    #avisoTelaPequena{
+        /* Caso a tela for pequena, exibe um aviso */
+        display: block;
+    }
+
+    #paginaSobre{
+        display: none;
+    }
+}

@@ -1,0 +1,248 @@
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", system-ui;
+}
+
+body, html {
+    background-color: aliceblue;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #4E148C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    padding: 1rem;
+}
+
+#tituloInicial {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-left: 2rem;
+}
+
+#listaLinks {
+    display: flex;
+    flex-direction: row;
+    padding-top: 7rem;
+}
+
+.linkHeader {
+    margin: 2rem;
+    color: white;
+    font-size: 1.1rem;
+    transition: 200ms ease;
+}
+
+.linkHeader:hover {
+    color: #97DFFC;
+    font-size: 1.3rem;
+}
+
+/* Banner */
+#banner, #desenvolvedores, #jogarAgora {
+    background-color: #7364D2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.textoSection {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 3rem;
+}
+
+.linkSection {
+    color: #97DFFC;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    transition: 200ms ease;
+}
+
+.linkSection:hover {
+    color: #3D0E61;
+}
+
+#imgLogoJogo, #imgFaseJogo {
+    width: 40%; /* Mantém o tamanho em telas grandes */
+    height: auto;
+    background-color: #3D0E61;
+    padding: 2rem;
+    border-radius: 2cm;
+}
+
+#imgLogoEmpresa{
+    width: 40%; /* Mantém o tamanho em telas grandes */
+    height: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2cm;
+}
+
+/* Footer */
+#rodape {
+    background-color: #4E148C;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyRight, #contatoRodape {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#contatoRodape {
+    font-size: 1.5rem;
+    transition: 200ms ease;;
+}
+
+#contatoRodape:hover {
+    color: #97DFFC;
+}
+
+/* Media Queries para responsividade */
+
+/* Telas menores que 900px (tablets e celulares) */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    #tituloInicial {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    #listaLinks {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .linkHeader {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    /* Imagens para tablets */
+    #imgLogoJogo, #imgLogoEmpresa, #imgFaseJogo {
+        width: 70%; /* Ajuste apenas para telas menores */
+        border-radius: 1cm;
+    }
+
+    .textoSection {
+        font-size: 1.6rem;
+        margin: 2rem;
+    }
+
+    .linkSection {
+        font-size: 1.4rem;
+        background-color: #3D0E61;
+        padding: 1rem;
+        border-radius: 0.5cm;
+        color: white;
+    }
+
+    .linkSection:hover {
+        color: #97DFFC;
+    }
+
+    #copyRight{
+        color: white;
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    #rodape{
+        height: 10rem;
+    }
+
+    #contatoRodape{
+        font-size: 1.1rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+
+    #contatoRodape:hover{
+        font-size: 1.1rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+
+    #contatoRodape:active{
+        font-size: 1.3rem;
+        font-weight: 800;
+        background-color: white;
+        color:#4E148C;
+        padding: 1rem;
+        border-radius: 1cm;
+    }
+}
+
+/* Telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    #tituloInicial {
+        font-size: 1.8rem;
+    }
+
+    .linkHeader {
+        font-size: 1.1rem;
+    }
+
+    /* Imagens para smartphones */
+    #imgLogoJogo, #imgLogoEmpresa, #imgFaseJogo {
+        width: 90%;
+    }
+
+    .textoSection {
+        font-size: 1.4rem;
+    }
+
+    .linkSection {
+        font-size: 1.2rem;
+    }
+
+    .linkSection:hover {
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .linkSection:active {
+        font-size: 1.4rem;
+        color: white;
+    }
+}
